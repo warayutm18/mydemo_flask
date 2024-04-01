@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>ผลการสอบวัดระดับทักษะภาษาอังกฤษ</h2>
+
+<!--{{mydata}}-->
+<div class="center">
+    <h3>รหัสนักศึกษา: {{mydata.0.student_id}}</h3>
+    <h3>ชื่อ-สกุล: {{mydata.0.full_name}} </h3>
+    <h3>คณะ: {{mydata.0.fac_name_th}}</h3>
+    <h3>สาขาวิชา: {{mydata.0.program_name_th}}</h3>
+    <h3>คะแนนสอบที่ได้: {{mydata.0.score_ept}}</h3>
+    <h3>CEFR: {{mydata.0.group_}}</h3>
+</div>
+{% endblock %}

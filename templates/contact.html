@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>ติดต่อเจ้าหน้าที่</h2>
+
+<form id="contact_form" name="contact_form" method="post">
+    <div class="mb-5 row">
+        <div class="col">
+            <label>ชื่อ</label>
+            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+        </div>
+        <div class="col">
+            <label>นามสกุล</label>
+            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+        </div>
+    </div>
+    <div class="mb-5 row">
+        <div class="col">
+            <label for="email_addr">รหัสนักศึกษา</label>
+            <input type="" required maxlength="50" class="form-control" id="email_addr" name="email">
+        </div>
+        <div class="col">
+            <label for="phone_input">เบอร์โทรศัพท์</label>
+            <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                placeholder="093285xxxx">
+        </div>
+    </div>
+    <div class="mb-5 row">
+        <div class="col">
+            <label for="email_addr">หัวข้อ</label>
+            <input type="" required maxlength="50" class="form-control" id="email_addr" name="email">
+        </div>
+    <div class="mb-5">
+        <label for="message">ข้อความ</label>
+        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary px-4 btn-lg">ส่ง</button>
+</form>
+{% endblock %}
